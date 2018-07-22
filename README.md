@@ -298,9 +298,10 @@ Next, run `exit` to go back to the host machine and proceed to the following ste
 
 ### 9. Setting Up the Firewall
 
-Now we would configure the firewall to allow only incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123):
+Now we would configure the firewall to allow only incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123) in grader:
 
 ```
+$ ssh grader@139.59.26.105 -p 2200
 # sudo ufw allow 2200/tcp
 # sudo ufw allow 80/tcp
 # sudo ufw allow 123/udp
@@ -385,12 +386,13 @@ RedirectMatch 404 /\.git
 ```
 ### 14. Install pip , setup virtual environment and also install Flask and its dependencies:
 
+After activating virtualenv each and ever command should be run under it.
 Install pip , virtualenv (in /var/www/catalog)
 ```
 $ sudo apt-get install python-pip
 $ sudo pip install virtualenv
 $ sudo virtualenv venv
-$ source venv/bin/activate
+$ source venv/bin/activate( dont deactivate virtualenv ,followed by this command rest all the commands are under venv.)
 $ sudo chmod -R 777 venv
 ```
 
