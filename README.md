@@ -210,7 +210,7 @@ The output would look like this:
 
 **Note**: Above, the UNIX password I have entered for the user `grader` is, `root`.
 
-#### 7.2. Adding `grader` to the Group `sudo`
+#### 7. Adding `grader` to the Group `sudo`
 
 Run the following command to add the user `grader` to the `sudo` group to grant it administrative access:
 
@@ -224,7 +224,7 @@ $ sudo nano /etc/sudoers.d/grader
 ```
 then add ```grader ALL=(ALL:ALL) ALL``` to the file then save and quit.
 
-### 7.3. Adding SSH Access to the user `grader`
+### 7.1. Adding SSH Access to the user `grader`
 
 To allow SSH access to the user `grader`, first log into the account of the user `grader` from your virtual server:
 
@@ -410,9 +410,9 @@ $ sudo nano /etc/apache2/sites-available/catalog.conf
 Add the following content:
 ```
 <VirtualHost *:80>
-   ServerName 52.91.21.75
-   ServerAlias ec2-52-91-21-75.compute-1.amazonaws.com
-   ServerAdmin grader@52.91.21.75
+   ServerName 139.59.26.105
+   ServerAlias 139.59.26.105.xip.io
+   ServerAdmin grader@139.59.26.105
    WSGIDaemonProcess catalog python-path=/var/www/catalog:/var/www/catalog/venv/lib/python2.7/site-packages
    WSGIProcessGroup catalog
    WSGIScriptAlias / /var/www/catalog/catalog.wsgi
