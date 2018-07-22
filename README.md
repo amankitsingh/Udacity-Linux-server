@@ -243,12 +243,16 @@ Now enter the following commands to allow SSH access to the user `grader`:
 ```
 $ mkdir .ssh
 $ chmod 700 .ssh
-$ cd .ssh/
-$ touch authorized_keys
-$ chmod 644 authorized_keys
+$ touch .ssh/authorized_keys
+$ nano .ssh/authorized_keys
 ```
 
 After you have run all the above commands, go back to your local machine and copy the content of the public key file `~/.ssh/udacity.pub`. Paste the public key to the server's `authorized_keys` file using `nano` or any other text editor, and save.
+
+```
+$ chmod 644 authorized_keys
+```
+Run the Above command to restrict the access for other users.
 
 After that, run `exit`. You would now be back to your local machine. To confirm that it worked, run the following command in your local machine:
 
