@@ -257,7 +257,7 @@ Run the Above command to restrict the access for other users.
 After that, run `exit`. You would now be back to your local machine. To confirm that it worked, run the following command in your local machine:
 
 ```console
-$ ssh grader@206.189.151.124 -p 2200
+$ ssh grader@139.59.26.105 -p 2200
 ```
 
 You should now be able to log in as `grader` and would get a prompt to enter commands.
