@@ -154,7 +154,7 @@ This will update all the packages. If the available update is a kernel update, y
    This will take you back to your host machine. After you are back to your local machine, run:
 
    ```
-   $ ssh root@206.189.151.124 -p 2200
+   $ ssh root@139.59.26.105 -p 2200
    ```
 
    You should now be able to log in to the server as `root` on port 2200. The `-p` option explicitly tells at what port the SSH server operates on. It now no more operates on port number 22.
@@ -164,7 +164,7 @@ This will update all the packages. If the available update is a kernel update, y
 To configure the timezone to use UTC, run the following command:
 
 ```
-# sudo dpkg-reconfigure tzdata
+# dpkg-reconfigure tzdata
 ```
 
 It then shows you a list. Choose ``None of the Above`` and press enter. In the next step, choose ``UTC`` and press enter.
