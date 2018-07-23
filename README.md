@@ -392,7 +392,7 @@ Install pip , virtualenv (in /var/www/catalog)
 $ sudo apt-get install python-pip
 $ sudo pip install virtualenv
 $ sudo virtualenv venv
-$ source venv/bin/activate( dont deactivate virtualenv ,followed by this command rest all the commands are under venv.)
+$ source venv/bin/activate( dont deactivate virtualenv ,followed by this command rest all the commands are under venv and each and every changes or updatation should be done in venv after activating it.)
 $ sudo chmod -R 777 venv
 ```
 
