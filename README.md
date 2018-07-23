@@ -488,7 +488,7 @@ $ sudo -u postgres psql
 10. Remote connections to PostgreSQL should already be blocked. Double check by opening the config file:
 
 ```
-$ sudo nano /etc/postgresql/9.5/main/pg_hba.conf
+$ sudo nano /etc/postgresql/10/main/pg_hba.conf
 ```
 
 It shoudld look some what like this:
