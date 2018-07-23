@@ -4,7 +4,8 @@ An Udacity Full Stack Web Developer II Nanodegree Project.
 
 ## About
 
-This tutorial will guide you through the steps to take a baseline installation of a Linux server and prepare it to host your Web applications. You will then secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing Flask-based Web applications onto it. It is made for python2.7 only for python3 you need to change a bit of things.
+This tutorial will guide you through the steps to take a baseline installation of a Linux server and prepare it to host your Web applications. You will then secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing Flask-based Web applications onto it. 
+It is made for ```python2.7 only for python3 you need to change a bit of things```.
 
 In this project, I have set up an Ubuntu 18.04 image on a DigitalOcean droplet. The technical details of the server as well as the steps that have been taken to set it up can be found in the succeeding sections.
 
@@ -484,7 +485,7 @@ $ sudo -u postgres psql
 6. Lock down the permissions to only let catalog role create tables:``` # GRANT ALL ON SCHEMA public TO catalog;```
 7. Log out from PostgreSQL:``` # \q```. Then return to the grader user:``` $ exit.```
 8. Edit the moredata.py and database.py file:
-9. Change engine = create_engine('sqlite:///menu.db') to engine = create_engine('postgresql://catalog:catalog@localhost/catalog')
+9. Change ```engine = create_engine('sqlite:///menu.db') to engine = create_engine('postgresql://catalog:catalog@localhost/catalog')```
 10. Remote connections to PostgreSQL should already be blocked. Double check by opening the config file:
 
 ```
