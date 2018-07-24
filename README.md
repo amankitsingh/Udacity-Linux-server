@@ -11,11 +11,11 @@ In this project, I have set up an Ubuntu 18.04 image on a DigitalOcean droplet. 
 
 ### Technical Information About the Project
 
-- **Server IP Address:** 139.59.26.105
+- **Server IP Address:** 139.59.26.105 
 - **Server Alias:** 139.59.26.105.xip.io
 - **SSH server access port:** 2200
 - **SSH login username:** grader
-- **Application URL:** http://139.59.26.105.xip.io
+- **Application URL:** ~http://139.59.26.105.xip.io~
 
 ## Steps to Set up the Server
 
@@ -485,7 +485,7 @@ $ sudo -u postgres psql
 6. Lock down the permissions to only let catalog role create tables:``` # GRANT ALL ON SCHEMA public TO catalog;```
 7. Log out from PostgreSQL:``` # \q```. Then return to the grader user:``` $ exit.```
 8. Edit the moredata.py and database.py file:
-9. Change ```engine = create_engine('sqlite:///menu.db') to engine = create_engine('postgresql://catalog:catalog@localhost/catalog')```
+9. Change ```engine = create_engine('sqlite:///datamenu.db') to engine = create_engine('postgresql://catalog:catalog@localhost/catalog')```
 10. Remote connections to PostgreSQL should already be blocked. Double check by opening the config file:
 
 ```
