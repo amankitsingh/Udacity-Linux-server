@@ -4,8 +4,8 @@ An Udacity Full Stack Web Developer II Nanodegree Project.
 
 ## About
 
-This tutorial will guide you through the steps to take a baseline installation of a Linux server and prepare it to host your Web applications. You will then secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing Flask-based Web applications onto it. 
-It is made for ```python2.7 only for python3 you need to change a bit of things```.
+This will guide you to setup the installation of a Linux server and your host your Web applications. You will then secure your server from a number of attack vectors, install and configure a database server, and deploy one of your Flask-based Web applications onto it. 
+It is made for ```python2.7 only and for python3 you need to change a bit of things```.
 
 In this project, I have set up an Ubuntu 18.04 image on a DigitalOcean droplet. The technical details of the server as well as the steps that have been taken to set it up can be found in the succeeding sections.
 
