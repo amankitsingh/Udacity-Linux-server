@@ -4,10 +4,10 @@ An Udacity Full Stack Web Developer II Nanodegree Project.
 
 ## About
 
-This will guide you to setup the installation of a Linux server and your host your Web applications. You will then secure your server from a number of attack vectors, install and configure a database server, and deploy one of your Flask-based Web applications onto it. 
+This will help you to setup a Linux server and you can host your WebSite seemlessly. You will then secure your server from various attacks.
 It is made for ```python2.7 only and for python3 you need to change a bit of things```.
 
-In this project, I have set up an Ubuntu 18.04 image on a DigitalOcean droplet. The technical details of the server as well as the steps that have been taken to set it up can be found in the succeeding sections.
+In this project, I have taken Ubuntu 18.04 image on a DigitalOcean droplet. Details of the server as well as the steps that have been taken to set it up is given in the succeeding sections.
 
 ### Technical Information About the Project
 
